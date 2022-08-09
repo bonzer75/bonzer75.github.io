@@ -1,0 +1,23 @@
+<section>
+    <hr>
+    <h1>Contacto</h1>
+    <p>Aquí te dejo un formulario para que me puedas contactar y dejar un mensaje.</p>
+    <form (submit)="submit()" [formGroup]="daForm">
+        <article id="form-data">
+            <label for="name">Nombres</label>
+            <input type="text" id="name" formControlName="name">
+
+            <label for="surname">Asunto</label>
+            <input type="text" id="name" formControlName="subject">
+
+            <label for="email">Email</label>
+            <input type="text" id="name" formControlName="email">
+        </article>
+        <article id="msg">
+            <label for="msg">Mensaje</label>
+            <textarea rows="9" cols="50" formControlName="message"></textarea>
+
+            <button class="button" type="submit" [disabled]="daForm.invalid">Enviar</button>
+        </article>
+    </form>
+</section>

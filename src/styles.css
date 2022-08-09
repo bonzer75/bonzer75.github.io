@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+  color:white;
+  padding: 0px;
+  margin: 0 auto;
+  font-family: "Roboto", "Arial";
+  box-sizing: border-box;
+}
+
+hr {
+  color: #0A0A0A;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: black;
+}
