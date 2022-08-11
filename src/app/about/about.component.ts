@@ -1,6 +1,28 @@
 import { HttpClient } from '@angular/common/http';
+import { ElementSchemaRegistry } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import swal from'sweetalert2';
+
+let projectsDict = [
+  {
+    id: 1, 
+    name:'Proyecto 1', 
+    bg: '/assets/img/0.png',
+    html: 'Tres tristes tigres, tragaban trigo en un trigal, en tres tristes trastos, tragaban trigo tres tristes tigres. <iframe width="410" height="315" src="https://www.youtube.com/embed/MzzxOQ9Zulc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+  },
+  {
+    id: 2, 
+    name:'Proyecto 2', 
+    bg: '/assets/img/1.png',
+    html: 'Tres tristes tigres, tragaban trigo en un trigal, en tres tristes trastos, tragaban trigo tres tristes tigres. <iframe width="410" height="315" src="https://www.youtube.com/embed/MzzxOQ9Zulc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+  },
+  {
+    id: 3, 
+    name:'Proyecto 3', 
+    bg: '/assets/img/2.png',
+    html: 'Tres tristes tigres, tragaban trigo en un trigal, en tres tristes trastos, tragaban trigo tres tristes tigres. <iframe width="410" height="315" src="https://www.youtube.com/embed/MzzxOQ9Zulc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+  }
+];
 
 @Component({
   selector: 'app-about',
@@ -9,41 +31,35 @@ import swal from'sweetalert2';
 })
 export class AboutComponent implements OnInit {
 
-  public lista: string[];
-  public num: number[];
-  title = "sweetAlert"
-
   constructor(private http: HttpClient) {
-    this.lista = ["Proyecto 1", "Proyecto 2", "Proyecto 3"];
-    this.num = [0, 1, 2];
-  }
-
+  } 
   ngOnInit(): void {
   }
 
+  title = "sweetAlert"
+  projects = projectsDict;
   sweetAlert(i:number) {
     if (i == 0) {
       swal.fire({
-          title: 'Proyecto 1',
-          html: 'Tres tristes tigres, tragaban trigo en un trigal, en tres tristes trastos, tragaban trigo tres tristes tigres. <iframe width="410" height="315" src="https://www.youtube.com/embed/MzzxOQ9Zulc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+          title: projectsDict[i].name,
+          html: projectsDict[i].html,
           showConfirmButton: true,
         })
     }
     if (i == 1) {
       swal.fire({
-          title: 'Proyecto 2',
-          html: 'Tres tristes tigres, tragaban trigo en un trigal, en tres tristes trastos, tragaban trigo tres tristes tigres. <iframe width="410" height="315" src="https://www.youtube.com/embed/MzzxOQ9Zulc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+          title: projectsDict[i].name,
+          html: projectsDict[i].html,
           showConfirmButton: true,
         })
     }
     if(i == 2) {
       swal.fire({
-          title: 'Proyecto 3',
-          html: 'Tres tristes tigres, tragaban trigo en un trigal, en tres tristes trastos, tragaban trigo tres tristes tigres. <iframe width="410" height="315" src="https://www.youtube.com/embed/MzzxOQ9Zulc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+          title: projectsDict[i].name,
+          html: projectsDict[i].html,
           showConfirmButton: true,
         })
     }
-
   }
 
 }
