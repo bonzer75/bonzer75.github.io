@@ -3,9 +3,9 @@
     <h1>Mi trabajo</h1>
     <p>En este apartado encontrarás trabajos hechos por mi, todos desarrollados en GNU/Linux, también puedes encontrarlos en mi cuenta de <a href="https://github.com/bonzer75" target="_blank">github</a>.</p>
     <section class="about">
-        <article *ngFor="let i of num" id="proyect{{ i }}" (click)="sweetAlert(i)">
+        <article *ngFor="let i of num" (click)="sweetAlert(i)"  style="background-image: url('/assets/img/{{ i }}.png');" >
             <h3>{{ lista[i] }}</h3>
             <p>Lenguajes:</p>
         </article>
-    </section>
+    </section> 
 </section>
