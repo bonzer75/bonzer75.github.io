@@ -74,18 +74,6 @@ article p {
     font-size: 25px;
 }
 
-#proyect0 {
-  background-image: url('/assets/img/1.png');
-}
-
-#proyect1 {
-  background-image: url('/assets/img/2.png');
-}
-
-#proyect2 {
-  background-image: url('/assets/img/3.png');
-}
-
 /*fundamental*/
 hr {
   color: rgba(255, 0, 0, 0);
