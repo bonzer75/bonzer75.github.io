@@ -7,19 +7,19 @@ let projectsDict = [
   {
     id: 1, 
     name:'Proyecto 1', 
-    bg: '/assets/img/0.png',
+    bg: '#447F00',
     html: 'Tres tristes tigres, tragaban trigo en un trigal, en tres tristes trastos, tragaban trigo tres tristes tigres. <iframe width="410" height="315" src="https://www.youtube.com/embed/MzzxOQ9Zulc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
   },
   {
     id: 2, 
     name:'Proyecto 2', 
-    bg: '/assets/img/1.png',
+    bg: '#007F75',
     html: 'Tres tristes tigres, tragaban trigo en un trigal, en tres tristes trastos, tragaban trigo tres tristes tigres. <iframe width="410" height="315" src="https://www.youtube.com/embed/MzzxOQ9Zulc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
   },
   {
     id: 3, 
     name:'Proyecto 3', 
-    bg: '/assets/img/2.png',
+    bg: '#7A7F00',
     html: 'Tres tristes tigres, tragaban trigo en un trigal, en tres tristes trastos, tragaban trigo tres tristes tigres. <iframe width="410" height="315" src="https://www.youtube.com/embed/MzzxOQ9Zulc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
   }
 ];
