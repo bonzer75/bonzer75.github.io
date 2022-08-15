@@ -31,9 +31,10 @@ section span:hover {
 /*Foto*/
 section article img {
     border-radius: 50%;
-    width: 350px;
-    height: 350px;
+    max-width: 350px; min-width: 150px;
+    max-height: 350px; min-height: 150px;
     margin-bottom: 20px;
+    justify-content: center;
 }
 
 /*texto*/
