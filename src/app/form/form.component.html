@@ -1,7 +1,8 @@
 <section>
-    <hr>
+    <br>
     <h1>Contacto</h1>
     <p>Aquí te dejo un formulario para que me puedas contactar y dejar un mensaje.</p>
+    <br>
     <form (submit)="submit()" [formGroup]="daForm">
         <article id="form-data">
             <label for="name">Nombres</label>
@@ -15,7 +16,7 @@
         </article>
         <article id="msg">
             <label for="msg">Mensaje</label>
-            <textarea rows="9" cols="50" formControlName="message"></textarea>
+            <textarea formControlName="message"></textarea>
 
             <button class="button" type="submit" [disabled]="daForm.invalid">Enviar</button>
         </article>
