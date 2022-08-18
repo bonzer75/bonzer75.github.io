@@ -2,12 +2,11 @@ section {
   text-align: center;
   font-size: 30px;
   background-color: #1E1626;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0px 20px 0px;
 }
 
 section h1 {
-    font-size: 1.5em;
+    font-size: 150%;
     margin: 40px 0px 35px;
   }
 
