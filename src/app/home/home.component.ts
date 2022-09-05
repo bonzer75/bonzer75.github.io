@@ -1,26 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
-
-let i:string[] = ['./home.component.css']
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: i
+  styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
 
-  constructor(public breakpointObserver: BreakpointObserver) { }
+  constructor() { }
 
   ngOnInit() {
-    this.breakpointObserver
-      .observe(['(min-width: 600px)'])
-      .subscribe((state: BreakpointState) => {
-        if (state.matches) {
-          let i = ['./home0.component.css']
-        } else {
-          console.log('Viewport width is less than 500px!');
-        }
-      });
   }
 }

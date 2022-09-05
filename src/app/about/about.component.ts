@@ -1,5 +1,4 @@
-import { HttpClient } from '@angular/common/http';
-import { ElementSchemaRegistry } from '@angular/compiler';
+/*import { HttpClient } from '@angular/common/http';*/
 import { Component, OnInit } from '@angular/core';
 import swal from'sweetalert2';
 
@@ -31,7 +30,7 @@ let projectsDict = [
 })
 export class AboutComponent implements OnInit {
 
-  constructor(private http: HttpClient) {
+  constructor(/*private http: HttpClient*/) {
   } 
   ngOnInit(): void {
   }
@@ -39,26 +38,31 @@ export class AboutComponent implements OnInit {
   title = "sweetAlert"
   projects = projectsDict;
   sweetAlert(i:number) {
-    if (i == 0) {
-      swal.fire({
+
+    switch(i) {
+      case 0:
+        swal.fire({
           title: projectsDict[i].name,
           html: projectsDict[i].html,
           showConfirmButton: true,
         })
-    }
-    if (i == 1) {
-      swal.fire({
+        break;
+
+      case 1:
+        swal.fire({
           title: projectsDict[i].name,
           html: projectsDict[i].html,
           showConfirmButton: true,
         })
-    }
-    if(i == 2) {
-      swal.fire({
+        break;
+      
+      case 2:
+        swal.fire({
           title: projectsDict[i].name,
           html: projectsDict[i].html,
           showConfirmButton: true,
         })
+        break;
     }
   }
 
