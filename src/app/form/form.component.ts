@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
-import { MessagesService } from 'src/app/services/messages/messages.service'
+import { MessagesService } from 'src/app/services/messages.service'
+
 
 @Component({
   selector: 'app-form',
@@ -10,7 +11,7 @@ import { MessagesService } from 'src/app/services/messages/messages.service'
 export class FormComponent implements OnInit {
 
   constructor(
-    public messagesService: MessagesService, 
+    public messagesService: MessagesService,
     public fb: FormBuilder
     ) { }
 
@@ -32,12 +33,9 @@ export class FormComponent implements OnInit {
     )
   }
 
-  submit(): void {
-    /*this.messagesService.saveMessage(this.daForm.value).subscribe(resp => {
-      this.daForm.reset();
-    },
-      error => { console.log(error) }
-    )*/
+  async submit() {
+    const res = await this.messagesService.addMessage(this.daForm.value)
+    console.log(res)
   }
 
 }
