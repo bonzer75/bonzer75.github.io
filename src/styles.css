@@ -17,3 +17,13 @@ html {
   scroll-behavior: smooth;
   background-color: black;
 }
+
+body::-webkit-scrollbar {
+  background: rgba(0, 0, 0, 0.4);
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb{
+  background: rgb(124, 124, 124);
+  border-radius: 10px;
+}
