@@ -48,7 +48,7 @@ article {
   width: 300px;
   margin-bottom: 50px;
   cursor: pointer;
-  box-shadow: 4px 4px 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
 } article:hover{
     transform: translateY(-15px);
     transition: 250ms ease-in-out;
@@ -73,7 +73,6 @@ article p {
     font-size: 25px;
 }
 
-/*fundamental*/
-hr {
-  color: rgba(255, 0, 0, 0);
+.text {
+  text-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
 }
