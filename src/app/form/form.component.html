@@ -1,21 +1,21 @@
 <section>
     <br>
-    <h1>Contacto</h1>
-    <p>Aquí te dejo un formulario para que me puedas contactar y dejar un mensaje.</p>
+    <h1 class="text">Contacto</h1>
+    <p class="text">Aquí te dejo un formulario para que me puedas contactar y dejar un mensaje.</p>
     <br>
     <form (submit)="submit()" [formGroup]="daForm">
         <article id="form-data">
-            <label for="name">Nombres</label>
+            <label for="name" class="text">Nombres</label>
             <input type="text" id="name" formControlName="name">
 
-            <label for="surname">Asunto</label>
+            <label for="surname" class="text">Asunto</label>
             <input type="text" id="name" formControlName="subject">
 
-            <label for="email">Email</label>
+            <label for="email" class="text">Email</label>
             <input type="text" id="name" formControlName="email">
         </article>
         <article id="msg">
-            <label for="msg">Mensaje</label>
+            <label for="msg">Mensaje class="text"</label>
             <textarea formControlName="message"></textarea>
 
             <button class="button" type="submit" [disabled]="daForm.invalid">Enviar</button>
