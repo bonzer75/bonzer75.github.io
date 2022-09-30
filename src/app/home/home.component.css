@@ -8,7 +8,6 @@ section article{
     display: flex;
     flex-direction:row;
     flex-wrap: wrap;
-    margin-bottom: 40px;
     margin-top: 190px;
 }
 
@@ -32,7 +31,6 @@ section article img {
     border-radius: 50%;
     max-width: 350px; min-width: 150px;
     max-height: 350px; min-height: 150px;
-    margin-bottom: 20px;
     justify-content: center;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
