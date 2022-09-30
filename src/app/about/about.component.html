@@ -1,9 +1,9 @@
 <section>
-    <br>
+    <br> <br>
     <h1 class="text">Mi trabajo</h1>
     <br>
     <p class="text">En este apartado encontrarás trabajos hechos por mi, todos desarrollados en GNU/Linux, también puedes encontrarlos en mi cuenta de <a href="https://github.com/bonzer75" target="_blank">github</a>.</p>
-    <br>
+    <br> <br>
     <section class="about">
         <article *ngFor="let p of projects; let i = index" (click)="sweetAlert(i)"  style="background-color: {{ projects[i].bg }}" >
             <h3>{{ projects[i].name }}</h3>
