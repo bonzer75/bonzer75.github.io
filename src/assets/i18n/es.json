@@ -1,0 +1,28 @@
+{
+  "text-button": "Leer más",
+
+  "home": {
+    "title": "Hola mundo, soy ",
+    "span": "Harold Vera.",
+    "first-paragraph": "Soy un programador jr de 16 años, bilingue, trabajo en frondend y backend, mis hobbies son los videojuegos y el modding.",
+    "second-paragraph": "Y para finalizar, siempre estoy dispuesto a ayudar"
+  },
+
+  "about": {
+    "title": "Mi trabajo",
+    "first-paragraph": "En este apartado encontrarás trabajos hechos por mi, todos desarrollados en GNU/Linux, también puedes encontrarlos en mi cuenta de ",
+    "span": "github",
+    "article": "Lenguajes:"
+  },
+
+  "form": {
+    "title": "Contacto",
+    "first-paragraph": "Aquí te dejo un formulario para que me puedas contactar y dejar un mensaje.",
+
+  },
+
+  "footer": {
+    "first-paragraph": "Por último, puedes seguirme en mis redes sociales, allí encontrarás información sobre mis proyectos y sabrás en qué estoy trabajando actualmente.",
+    "Copyright": "© Copyright 2022, Harold Vera"
+  }
+}
