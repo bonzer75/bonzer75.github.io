@@ -1,23 +1,21 @@
 import { Injectable } from '@angular/core';
-import { Firestore, collection, addDoc } from '@angular/fire/firestore';
-
-interface Message {
-  id?: string;
-  name: string;
-  subject: string;
-  email: string;
-  message: string;
-}
+import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MessagesService {
 
-  constructor(private firestore: Firestore) { }
+  private api_server = "https://angular-portfolio-database.herokuapp.com/";
 
-  addMessage(message: Message) {
-    const messageRef = collection(this.firestore, 'message');
-    return addDoc(messageRef, message)
+  constructor(private http: HttpClient) { }
+
+  public getData(): Observable<any>{
+    return this.http.get(this.api_server)
+  }
+
+  public saveMessage(m: any): Observable<any>{
+    return this.http.post(this.api_server, m);
   }
 }

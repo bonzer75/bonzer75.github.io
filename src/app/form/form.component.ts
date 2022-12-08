@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { MessagesService } from 'src/app/services/messages.service'
-import swal from 'sweetalert2';
 
 @Component({
   selector: 'app-form',
@@ -33,15 +32,12 @@ export class FormComponent implements OnInit {
     )
   }
 
-  async submit() {
-    const res = await this.messagesService.addMessage(this.daForm.value)
-    //console.log(res)
-    swal.fire(
-      '¡Gracias!',
-      'tu formulario ha sido enviado con éxito.',
-      'success'
+  submit(): void {
+    this.messagesService.saveMessage(this.daForm.value).subscribe(resp => {
+      this.daForm.reset();
+    },
+      error => { console.log(error) }
     )
-    this.daForm.reset()
   }
 
 }
