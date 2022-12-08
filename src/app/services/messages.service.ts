@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class MessagesService {
 
-  private api_server = "https://angular-portfolio-database.herokuapp.com/";
+  private api_server = "https://angular-portfolio-database-production.up.railway.app/messages/";
 
   constructor(private http: HttpClient) { }
 
