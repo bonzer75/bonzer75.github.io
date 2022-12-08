@@ -10,6 +10,11 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
+## Dependencies
+Run `npm i -g @angular/cli` to install angular
+`npm i @ngx-translate/core --save` and `npm i @ngx-translate/http-loader` to install  ngx-translate
+and finally, run ` ng add @fortawesome/angular-fontawesome`, then select de version 6, and "free solid svg" to install fontawesome icons.
+
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
