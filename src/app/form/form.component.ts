@@ -33,11 +33,10 @@ export class FormComponent implements OnInit {
   }
 
   submit(): void {
-    this.messagesService.saveMessage(this.daForm.value).subscribe(resp => {
+    /*this.messagesService.saveMessage(this.daForm.value).subscribe(resp => {
       this.daForm.reset();
     },
       error => { console.log(error) }
-    )
+    )*/
   }
-
 }
